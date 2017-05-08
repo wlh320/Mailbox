@@ -1,15 +1,24 @@
 import React from 'react'
-import styles from '../css/titlebar.scss'
-import img from './profilephoto.jpeg'
-import VSearchBar from '../containers/vsearchbar.jsx'
+import logo from '../logo.svg';
+import avatar from '../../public/avatar.jpg'
+
 
 const Titlebar = () => (
-	<div className = {styles.titlebar}>
-		<p><i className = 'fa fa-superpowers' />EsMail</p>
-		<VSearchBar />
-		<span>Yisha{'    '}
-		<i className = "fa fa-angle-down"/></span>
-		<img className={styles.profileimg} src={img} />
-	</div>)
+  <nav className='nav has-shadow'>
+    <div className='nav-left'>
+      <div className='nav-item'>
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1 className="title is-4">Mailbox</h1>
+      </div>
+    </div>
+    <div className='nav-right'>
+      <div className="avatar">
+        <img src={avatar} alt="avatar" />
+      </div>
+      <div className='nav-item'>
+        <span>Wlh</span>
+      </div>
+    </div>
+  </nav>)
 
 export default Titlebar

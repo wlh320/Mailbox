@@ -1,18 +1,38 @@
 # Mailbox
-🌸🎉使用react+redux+webpack搭建的邮箱应用🎉🌸
 
-DEMO: https://yisha0307.github.io/Mailbox/public/index.html    
+Single Page  Application built with react + redux.
 
-记录：https://segmentfault.com/a/1190000008480601   
-（文章中尚未更新表单验证、搜索邮件、thunk等后加的内容）  
-###后续修改：
-####1、搜索邮件可改为忽略大小写(用正则）：
-```
-//maillist.jsx
-const searchTextReg = new RegExp(searchText, 'i');
-	const displayMails = displayMail.filter(mail => searchTextReg.test(mail.from)
-				|| searchTextReg.test(mail.address)
-				|| searchTextReg.test(mail.message)
-				|| searchTextReg.test(mail.subject))
- ```
- 
+fork from [Mailbox](https://github.com/yisha0307/Mailbox).
+
+## Demo
+
+You can find a demo  [HERE](https://0hao.top/mailbox/).
+
+## Build & Run
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+- install dependencies:
+
+  ```shell
+  npm install
+  ```
+
+- run in dev mode:
+
+  ```shell
+  npm run start
+  ```
+
+- build production:
+
+  ```shell
+  npm run build
+  ```
+
+P.S. I personally recommend `cnpm` instead of `npm` **in China** .
+
+## More
+
+- I'm not good at frontend development, so the style is based on a CSS framework [bulma](https://github.com/jgthms/bulma)
+- still under development

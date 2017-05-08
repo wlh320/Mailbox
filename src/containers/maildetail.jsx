@@ -1,7 +1,5 @@
-import React from 'react'
 import {connect} from 'react-redux'
 import MailDetail from '../components/maildetail'
-import {postData, putData} from '../actions.fetchData'
 
 const mapStateToProps = (state) => {
 	return {
@@ -13,16 +11,17 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		handlecompose: (url,address,message,subject) => {dispatch(postData(
-			url, address, message, subject))},
-		deleteemail: (url,mails,id,origTag)=> {
-			dispatch(putData(url,"tag", "deleted"));
-			dispatch({
-				type: 'MOVE_MAIL',
-				mails: state.mails,
-				origTag: origTag
-			})
-		}
+		handleCompose: (address,message,subject) => {dispatch({
+			type:'COMPOSE',
+			from: 'Chen Yisha',
+			address:address,
+			time: timeFormat(new Date()),
+			message:message,
+			subject: subject,
+			tag:'sent',
+			read:true
+		})},
+		deleteemail: (mails,id,origTag)=> {dispatch({type: 'MOVE_MAIL',mails,id,origTag,tag:'deleted'})}
 	}
 }
 
