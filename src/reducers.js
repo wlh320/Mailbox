@@ -19,7 +19,8 @@ const mails = (state = MAILS, action) => {
           subject: action.subject,
           id: id++,
           tag: action.tag,
-          read: 'true'
+          read: 'true',
+          star: 'false'
         }
       ];
     case 'MOVE_MAIL':
@@ -37,6 +38,18 @@ const mails = (state = MAILS, action) => {
           return mail;
         } else {
           return (Object.assign({}, mail, {'read': 'true'}));
+        }
+      });
+    case 'STAR_MAIL':
+      return state.map(mail => {
+        if (mail.id !== action.id) {
+          return mail;
+        } else {
+          if (mail.star==='false') {
+            return (Object.assign({}, mail, {'star': 'true'}));
+          } else {
+            return (Object.assign({}, mail, {'star': 'false'}));
+          }
         }
       });
     default:

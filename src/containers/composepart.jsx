@@ -21,13 +21,14 @@ const mapDispatchToProps = (dispatch) => {
     handleCompose: (address, message, subject) => {
       dispatch({
         type: 'COMPOSE',
-        from: 'Chen Yisha',
+        from: 'tj',
         address: address,
         time: timeFormat(new Date()),
         message: message,
         subject: subject,
         tag: 'sent',
-        read: true
+        read: true,
+        star: 'false'
       })
     },
     validateAddress: (value) => {

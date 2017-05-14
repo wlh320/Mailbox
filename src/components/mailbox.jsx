@@ -11,12 +11,12 @@ class Mailbox extends Component {
     return (
       <div>
         <Titlebar />
-          <div className="columns">
-            <VSidebar />
-            <VMaillist />
-            <VComposePart />
-            <VMailDetail />
-          </div>
+        <div className="columns">
+          <VSidebar />
+          <VMaillist />
+          <VComposePart showfirst={false} />
+          <VMailDetail />
+        </div>
       </div>)
   }
 }

@@ -5,7 +5,7 @@ const mapStateToProps = (state) => {
 	return {
 		mails: state.mails,
 		selectedEmailID: state.selectedEmailID,
-		display: state.composeORnot? 'none':'block'
+		display: state.composeORnot ? 'none':'block'
 	}
 }
 

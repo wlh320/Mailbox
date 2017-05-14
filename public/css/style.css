@@ -1,14 +1,23 @@
-.column {
-    padding-left: 0;
-    padding-right: 0;
+html,body{
+  height:100%;
+  /*overflow-y:hidden;*/
+  font-family: 'Roboto', sans-serif;
 }
 
+.column {
+  padding-left: 0;
+  padding-right: 0;
+  /*height: 100%;*/
+}
+
+
 .panel-tabs>.is-active {
-    border-bottom: 3px solid #00d1b2;
+  border-bottom: 3px solid #00d1b2;
 }
 
 .panel-block.is-active {
-    border-left: 6px solid #00d1b2;
+  border-left: 6px solid #00d1b2;
+  background-color: #dfefff;
 }
 
 .composepart  {
@@ -19,37 +28,34 @@
 }
 
 .avatar {
-    width: 45px;
-    height: 45px;
-    padding-right: 3px;
-    padding-top: 2px;
+  width: 45px;
+  height: 45px;
+  padding-right: 3px;
+  padding-top: 2px;
 }
 
 a {
     position:relative;
 }
 
-.circle {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #23d160;
-    position: absolute;
-    right: 10px;
-    top:10px;
+.star {
+  color: #ffac2d;
+  position: absolute;
+  right: 10px;
+  top:10px;
 }
 
 i {
-    padding-left: 5px;
-    padding-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .mail-name{
-    text-transform: uppercase;
-        color: #999;
+  text-transform: uppercase;
+  /*color: #999;*/
 }
 .mail-subject{
-    font-weight: bold;
+  font-weight: bold;
 }
 
 
@@ -58,15 +64,15 @@ i {
 }
 
 .address {
-  position: absolute;
+  float: right;
   right: 50px;
   color: #6c7872;
-  font-size: 12px; 
+  /*font-size: 12px; */
 }
 
 .subject {
   margin-top: 30px;
-  font-size: 25px; 
+  font-family: 'Merriweather', serif;
 }
 
 .tag {
@@ -75,9 +81,47 @@ i {
 }
 
 .menu-list  a {
-	margin-bottom: 0.5em;
+	/*margin-bottom: 0.5em;*/
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 .menu-list span {
 	margin-left: 1em;
+}
+
+.unread {
+  background-color: #ffffd9;
+  border-left: 5px solid #ffa500;
+}
+
+.trash {
+  float: right;
+}
+
+.nav {
+  background-color: #00bcd4;
+  /*background-color:  rgb(0,120,136);*/
+  color: white;
+}
+
+.avatar{
+  border-radius: 50%;
+}
+
+.button.is-warning {
+  background-color: white;
+}
+
+.compose {
+  text-align: center;
+}
+
+.sidebar {
+  background-color: #f0f8ff;
+}
+
+/*font*/
+.logo {
+  font-family: 'PlayBall', cursive;
 }

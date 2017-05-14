@@ -5,7 +5,7 @@ const SearchBar = ({ searchText, searchMails }) => {
   return (
 
     <div className="control has-icons-left">
-      <input className="input is-small" type='text' ref={input => searchT = input}
+      <input className="input" type='text' ref={input => searchT = input}
         onKeyUp={(e) => {
           // if (e.keyCode === 13) {
           searchMails(searchT.value)

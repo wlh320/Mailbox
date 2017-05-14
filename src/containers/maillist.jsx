@@ -15,7 +15,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
 	return {
 		turnunread: (bool) => { dispatch({ type: 'TURN_UNREAD', bool }) },
-		openmail: (id) => { dispatch({ type: 'OPEN_MAIL', id }) }
+		openmail: (id) => { dispatch({ type: 'OPEN_MAIL', id }) },
+		starmail: (id) => { dispatch({ type: 'STAR_MAIL', id }) },
 	}
 }
 

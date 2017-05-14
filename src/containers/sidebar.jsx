@@ -14,12 +14,18 @@ function countsent(mails){
 	return sent.length
 }
 
+function countstar(mails){
+	const star = mails.filter(mail => mail.star === 'true');
+	return star.length
+}
+
 const mapStateToProps = (state) => {
 	return {
 		currentSection: state.currentSection,
 		unreadcount: countunread(state.mails),
 		trashcount: counttrash(state.mails),
-		sentcount: countsent(state.mails)
+		sentcount: countsent(state.mails),
+		starcount: countstar(state.mails)
 	}
 }
 
