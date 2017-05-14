@@ -6,7 +6,9 @@ fork from [Mailbox](https://github.com/yisha0307/Mailbox).
 
 ## Demo
 
-You can find a demo  [HERE](https://0hao.top/mailbox/).
+v0.1: ~~You can find a demo  [HERE](https://0hao.top/mailbox/).~~
+
+v0.2: New version click [HERE](https://0hao.top/mailbox3).
 
 ## Build & Run
 
